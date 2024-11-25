@@ -58,7 +58,6 @@ public class C05_WebElementKullanma {
         } else System.out.println("Arama testi FAILED");
 
 
-
         // sayfayi kapatin
         Thread.sleep(1000);
         driver.quit();
