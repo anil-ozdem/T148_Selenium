@@ -34,7 +34,28 @@ public class C04_DriverManageMethodlari {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+        /*
+            Thread.sleep(3000) Java'dan gelir ve mutlak bir bekleme suresidir
+            icine yazilan sure boyunca, kodlari bekletir
+            ve alt satira gecmez
 
+
+            implicitlyWait(Duration.ofSeconds(10));
+            ise Selenium'dan gelir ve dinamiktir.
+            Yani 10 saniyeyi sonuna kadar kullanmaz,
+            asil amac sayfanin acilmasi veya
+            sayfada kullanacagimiz herhangi bir webelementin kullanilir hale gelmesini beklemektir.
+
+            10 saniye icerisinde sayfanin acilmasini
+            veya kullanacagi webelementi bulmayi bekler
+            10 saniye icerisinde Ne zaman islemi yapabilirse,
+            daha fazla beklemez yoluna devam eder
+
+            10 saniye beklemesine ragmen
+            sayfa acilmazsa veya
+            aradigi webelementi bulamazsa
+            exception firlatir ve calismayi durdurur
+         */
 
 
     }
