@@ -20,6 +20,7 @@ public class C03_ByLinkText {
 
         // 2- https://www.automationexercise.com/ adresine gidin
         driver.get("https://www.automationexercise.com/");
+        Thread.sleep(1000);
 
         // 3- Sayfada 147 adet link bulundugunu test edin.
 
@@ -39,6 +40,13 @@ public class C03_ByLinkText {
         driver.findElement(By.partialLinkText("Products")).click();
 
         // 5- special offer yazisinin gorundugunu test edin
+
+        WebElement speacialOfferYaziElementi = driver.findElement(By.id("sale_image"));
+
+        if (speacialOfferYaziElementi.isDisplayed()) {
+            System.out.println("Speacial Offer yazi testi PASSED");
+        } else System.out.println("Speacial Offer yazi testi FAILED");
+
         // 6- Sayfayi kapatin
         Thread.sleep(3000);
         driver.quit();
