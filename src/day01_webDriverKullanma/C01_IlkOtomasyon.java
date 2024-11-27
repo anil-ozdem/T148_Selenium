@@ -1,4 +1,4 @@
-package day01_WebDriverKullanma;
+package day01_webDriverKullanma;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
